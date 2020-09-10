@@ -1,0 +1,403 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation,ExtraTranslation">
+
+    <!-- Facebook -->
+    <string name="facebook_app_id">2123580187890364</string>
+    <string name="fb_login_protocol_scheme">fb2123580187890364</string>
+
+    <!-- Twitter -->
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">dw4k3pQ0i8qM1iVLuuE0OZnwZ</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">EaVP6AcnJJ0rtG0rwzhw95dzH9ZNi5wfvMBHpTDINdQ2XD2nLE</string>
+
+    <!--Validation-->
+    <string name="numbers">0123456789</string>
+
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+
+    <!--PinChange-->
+
+    <!-- error volley -->
+    <string name="msg_no_internet">Internet is not connected.</string>
+    <string name="msg_auth">Your session has been expired, Try login again.</string>
+    <string name="msg_unexpected_error">Sorry! Could not process your request.</string>
+    <string name="msg_timeout_error">Sorry! Request Timed out.</string>
+    <string name="server_error">Sorry! Please try again.</string>
+
+    <!-- Settings -->
+    <string name="terms_amp_conditions">By Signing up you agree to our \n<u>Terms &amp; conditions</u></string>
+    ​
+    <string name="mobile">Mobile</string>
+    ​
+    <string name="near_by">NEAR BY</string>
+
+    <!-- Sign Up -->
+    <string name="profile">Profile</string>
+    <string name="following">Following</string>
+
+    <!-- Header -->
+    <string name="followers">Fans</string>
+    <string name="friends">Friends</string>
+
+    <!-- Profile -->
+    <string name="user_name">User Name</string>
+    <string name="messages">Messages</string>
+    <string name="daily_task">Daily Task</string>
+    <string name="wallet">Wallet</string>
+    <string name="my_assets">My Assests</string>
+    <string name="daily_checkIn">Daily Check In</string>
+    <string name="rewards">Rewards</string>
+    <string name="level">Level</string>
+    <string name="suggestions">Suggestions</string>
+    <string name="help_and_faq">Help and FAQ</string>
+    <string name="about_us">About Us</string>
+    <string name="follow">Follow</string>
+    <string name="unFollow">UnFollow</string>
+    <string name="message">Message</string>
+    <string name="block">Block</string>
+    <string name="biography">Biography</string>
+    <string name="ok">OK</string>
+    <string name="logout">Logout</string>
+    <string name="privacy">Privacy Settings</string>
+    <string name="connectAccount">Connected Accounts</string>
+
+    <string name="rewarded_video"></string>
+
+    <!-- Settings-->
+    <string name="pin">Pin</string>
+    <string name="blockedList">Blocked List</string>
+    <string name="gWallet">Google Wallet</string>
+    <string name="report">Report</string>
+    <string name="gender">Gender</string>
+    <string name="streamer_agreement">By Clicking "GO Live," you\'ve agreed to <font color='#FF7443'>BLive Streamer Agreement</font></string>
+    <string name="no_live_users">No Live Users Available</string>
+    <string name="no_active_users">No Active Users</string>
+
+    <!--Streamers Agreement-->
+    <string name="no_users_available">No Users Available</string>
+
+    <string name="no_videos_available">No Videos Available</string>
+    <string name="no_followers_available">No Followers Available</string>
+    <string name="no_topList_available">No Top Fans Available</string>
+    <string name="no_friends_available">No Friends Available</string>
+    <string name="no_users_found">No Users Found</string>
+    <string name="no_songs_found">No Songs Found</string>
+    <string name="no_fans_available">No Users Available</string>
+    <string name="no_blockList_available">No BlockList Available</string>
+    <string name="no_contributors">No Contributors Available</string>
+    <string name="warning">Warning: Any display of weapons; adultery, indecent exposure; content unsuitable for children; strong language; consumption of tobacco, alcohol, or drugs; contents banned by respective governments is prohibited.<font color='#FF7443'> अन्य एप्लिकेशन के बारे में चर्चा करने से आईडी ब्लॉक हो जाएगी. Live Broadcasts are monitored 24x7.</font></string>
+
+    <string name="choose_from_gallery">Choose from Gallery</string>
+    <string name="take_a_photo">Take a Photo</string>
+
+    <!--Stream Warning-->
+    <string name="view_photo">View Profile Photo</string>
+
+    <!--Photo Selection -->
+    <string name="swap">Swap</string>
+    <string name="bio">BIO</string>
+    <string name="birthday">Birthday</string>
+
+    <!--Edit profile-->
+
+    <string name="country">Country</string>
+    <string name="mobile_no">Mobile</string>
+    <string name="about_you">About You</string>
+    <string name="name">Name</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="enter_mobileNo">Enter Mobile Number</string>
+    <string name="gift">Gift</string>
+    <string name="assets">Assets</string>
+    <string name="freeGift">Free Gift</string>
+
+    <!--Live Room -->
+    <string name="message_hint">Type Here...</string>
+    <string name="hide_profile"> After turning this on,only followers can see your profile</string>
+    <string name="hide_dob"> After turning this on,only followers can see your DOB</string>
+    <string name="hide_gender"> After turning this on,only followers can see your Gender</string>
+
+    <!--Privacy Screen-->
+    <string name="hide_location"> After turning this on,only followers can see your Location</string>
+    <string name="hide_age"> After turning this on,only followers can see your Age</string>
+    <string name="broadcastEnd">Broadcast ended!</string>
+    <string name="gift_receive">Gift Received</string>
+    <string name="gift_send">Gift Sent</string>
+    <!--Leader Board Screen-->
+
+    <string name="unblock">Unblock</string>
+
+    <string name="no_notifications_available">No Notifications Available</string>
+    <string name="lrc_label">Sin letras</string>
+    <string name="no_messages_available">No Messages Available</string>
+    <string name="send">Send</string>
+
+    <!--LrcView-->
+    <string name="write_a_message">Type a message…</string>
+
+    <string name="mobile_number">Mobile Number</string>
+    <string name="create_account">Create an account</string>
+    <string name="change">Change</string>
+
+    <!-- User Account Creation  -->
+    <string name="exit">Exit</string>
+    <string name="admin_block">Your ID is reset due to inappropriate actions, so your session is currently invisible to other viewers. Please login after few minutes. For more details e-mail to <font color='#023DBA'>support@blive24hrs.com</font>. \nNote: Mention your Blive ID and issues faced.\nThank You!</string>
+    <string name="filter_name">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</string>
+    <string name="filter_number">0123456789</string>
+
+    <!--Admin Block -->
+    <string name="header_name">B Live</string>
+
+    <string name="clear_all">Clear All</string>
+
+    <!-- input filter -->
+    <string name="toppers">Toppers</string>
+    <string name="next">NEXT</string>
+
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="save">Save</string>
+
+    <!-- intop Screen -->
+    <string name="choose_birthday">Choose Birthday</string>
+    <string name="blive_id">BLIVE ID</string>
+    <string name="referral_code">Referral Code</string>
+
+    <!-- Exchange Gold Value-->
+
+    <string name="referral">Referral Code (optional)</string>
+    <string name="tryAgain">Please check your connection and try again.</string>
+    <string name="noInternet">No Internet Connection</string>
+    <string name="try_Again">Try Again</string>
+    <string name="verify">Verify</string>
+    <string name="hide_BId">Hide BLive I\'D</string>
+    <string name="hide_Dob">Hide Date of Birth</string>
+    <string name="hide_gender_txt">Hide Gender</string>
+    <string name="hide_age_txt">Hide Age</string>
+    <string name="topFans">Top Fans</string>
+    <string name="games">Games</string>
+    <string name="DailyInHistory">Daily Check In </string>
+    <string name="age">Age</string>
+    <string name="offline">Currently the user is OFFLINE</string>
+    <string name="bgold">B-Gold</string>
+    <string name="viewers">Viewers</string>
+    <string name="broadcast_timing">Broadcast Time</string>
+    <string name="ideal_timing">Idle Time</string>
+    <string name="search">Search</string>
+    <string name="search_users">Search users</string>
+    <string name="duration">Live Duration</string>
+    <string name="likes">Likes</string>
+    <string name="tap_to_live">Tap to GOLIVE</string>
+    <string name="broadcast_live">Broadcast Live</string>
+    <string name="endCall">End Call</string>
+    <string name="unMute">UnMute</string>
+    <string name="mute">Mute</string>
+    <string name="alert">Alert</string>
+    <string name="call">Call</string>
+    <string name="textmute">Text Mute</string>
+    <string name="bLive_Friends">Friends List</string>
+    <string name="select_All">Select All</string>
+    <string name="submit">Submit</string>
+    <string name="friends_List">Friend\'s List</string>
+    <string name="forced_logout">You are forced to logged out. As we found your account logged in from another device.</string>
+    <string name="contributors">Contributors</string>
+    <string name="level_two"> Lv : 0 </string>
+    <string name="def">0</string>
+    <string name="broadcast_paused">Broadcast has been Paused! Waiting for Broadcaster To Resume Broadcasting!</string>
+    <string name="broadcast_pause">Broadcast has been Paused! Waiting for Broadcaster To Resume Broadcasting!</string>
+    <!-- fragment -->
+    <string name="not_mentioned">Not Mentioned</string>
+    <string name="male">Male</string>
+
+    <string name="female">Female</string>
+    <string name="user_is_offline">Currently the user is OFFLINE</string>
+
+    <string name="tv_pin">Keep your wallet safe and secure</string>
+
+
+    <string name="tv_textMute">You Are Currently Text Muted "For This Session."</string>
+    <string name="tv_kickOut">You have been kicked out of the Session !</string>
+    <string name="tv_pkChallenge">Has Invited You For PK Challenge</string>
+    <string name="tv_pkTimeAccept">Minutes Pk Challenge Has Been Accepted</string>
+    <string name="tv_quit">Are You Sure You Want to Quit?</string>
+
+    <string name="search_songs">Search Songs</string>
+    <string name="coming_soon">Coming Soon…</string>
+    <string name="no_giftAvailable">No Gifts Available</string>
+
+    <string name="blive_id_text">Blive Id : </string>
+    <string name="level_text">Level : </string>
+    <string name="send_otp">Send OTP</string>
+    <string name="reset_number"><u>Reset Number</u></string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="prvt">Private</string>
+    <string name="hidden">Hidden</string>
+    <string name="my_progress">History</string>
+    <string name="dob">DOB</string>
+    <string name="label_beauty_effect">Beauty</string>
+    <string name="label_lightness">Lightness</string>
+    <string name="label_smoothness">Smoothness</string>
+    <string name="label_redness">Redness</string>
+
+    <string name="reconnecting">Network reconnecting …</string>
+    <string name="account_offline">Connection lost</string>
+    <string name="send_msg_failed">Message sending failed!</string>
+    <string name="swipe_right">Swipe from Right to Choose a Song</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notification_error_ssl_cert_invalid">SSL Certification Error</string>
+    <string name="bulletmsg">Bullet Message Sent</string>
+
+    <string name="label_title_resolution">Resolution\n(Width * Height)</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="label_title_frame_rate">Frame Rate\n(fps)</string>
+    <string name="label_confirm">Confirm</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    //Bullet Message Sent
+    <!--<string name="bulletmsg">123456789012345677890123456789012345678901234567890</string>-->
+    <string name="offers">BLive Messages</string>
+
+    <string name="live_ended">LIVE Ended</string>
+    <string name="you_can_watch_another_live">You Can Watch Another Live</string>
+    <string name="user_active_status">ACTIVE</string>
+    <string name="user_inactive_status">INACTIVE</string>
+    <string name="pk_start_btn_text">Start</string>
+    <string name="global_match_text">Match</string>
+
+
+    <!--pkstart-->
+    <string name="invite_friends_text">Invite</string>
+    <string name="pk_request_type">PKRequest</string>
+    <string name="global_pk_request_type">GLOBALPK</string>
+    <string name="pk_request_accept_type">ACCEPTED</string>
+    <string name="pk_request_reject_type">REJECTED</string>
+    <string name="pk_request_join_type">JOIN</string>
+    <string name="invitation_msg">Is Inviting You To Join PK</string>
+    <string name="pk_request_received">pk_req_received</string>
+    <string name="host_leave_for_pk">broadcaster leaves to join PK as guest</string>
+    <string name="broadcast_goes_for_pk">broadcaster starts PK</string>
+    <string name="pk_accept_msg_received">pk_accept_received</string>
+    <string name="pk_join_msg_received">join_received</string>
+    <string name="pk_join_aud_msg_received">join_aud_received</string>
+    <string name="pk_reject_received">pk_reject_received</string>
+    <string name="pk_time_settings_text">Set PK Duration</string>
+    <string name="pk_send_invites_head_text">Send Invites</string>
+    <string name="pk_time_5">3 Min</string>
+    <string name="pk_time_10">5 Min</string>
+    <string name="pk_time_15">10 Min</string>
+    <string name="pk_time_20">15 Min</string>
+    <string name="pk_save_btn_text">Save</string>
+    <string name="no_friend_text"> No friends available online</string>
+    <string name="pk_duration_head">PK Durations</string>
+    <string name="pk_settings_head">PK Settings</string>
+    <string name="pk_bottom_note_str">Loser Should Accept The Punishment Set By The Winner</string>
+    <string name="version">Version 1.7.4</string>
+    <string name="pk">PK</string>
+    <string name="dialog_string">**Redeem Your Rewards on Rewards Page</string>
+    <string name="admob">ca-app-pub-8962437692976135/8764814011</string>
+    <string name="privatelive">Private Live</string>
+    <string name="clearcahe">Clear Cache</string>
+    <string-array name="string_array_resolutions">
+        <item>160x120</item>
+        // 120P
+        <item>320x180</item>
+        // 180P
+        <item>320x240</item>
+        // 240P the default one
+        <item>640x360</item>
+        // 360P
+        <item>640x480</item>
+        // 480P
+        <item>1280x720</item>
+        // 720P
+        <item>960x720</item>
+        // 960P
+        <item>1080x1920</item>
+        //1080P
+        <item>1440x2560</item>
+        //2K
+        <item>2160x3840</item>
+        //4K
+    </string-array>
+    <string-array name="string_array_frame_rate">
+        <item>15</item>
+        // 120P
+        <item>15</item>
+        // 180P
+        <item>15</item>
+        // 240P
+        <item>15</item>
+        // 360P
+        <item>15</item>
+        // 480P
+        <item>30</item>
+        // 720P
+        <item>30</item>
+        // 960P
+        <item>30</item>
+        // 1080P
+        <item>30</item>
+        // 2K
+        <item>30</item>
+        // 4K
+    </string-array>
+    <string-array name="string_array_bit_rate">
+        <item>80</item>
+        // 120P
+        <item>160</item>
+        // 180P
+        <item>200</item>
+        // 240P
+        <item>400</item>
+        // 360P
+        <item>500</item>
+        // 480P
+        <item>1710</item>
+        // 720P
+        <item>2760</item>
+        // 960P
+        <item>3150</item>
+        // 1080P
+        <item>4850</item>
+        // 2K
+        <item>6500</item>
+        // 4K
+        ​
+    </string-array>
+    <string-array name="combo_array">
+        <item>1</item>
+        <item>25</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+    </string-array>
+    <string-array name="pk_timeframes">
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+    </string-array>
+
+    <!--endpk-->
+
+    <string name="authority">com.blive.fileprovider</string>
+    <string name="media">Media</string>
+    <string name="audio">Audio</string>
+    <string name="docs">Docs</string>
+    <string name="file_not_found">File not found!\nFile is either Moved, Deleted or Renamed.</string>
+    <string name="empty_text_chat_list">Your chats appear here\nStart chatting by selecting a user.</string>
+    <string name="recording">Recording</string>
+    <string name="video">Video</string>
+    <string name="image">Image</string>
+
+    <string name="permission_request">This sample needs permission for camera and audio recording.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="record">Record</string>
+    <string name="stop">Stop</string>
+
+</resources>

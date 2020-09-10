@@ -1,0 +1,124 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+apply plugin: 'signing'
+
+version = "1.6"
+group = "com.kbeanie"
+
+def sonatypeRepo = ""
+def sonatypeUsername = ""
+def sonatypePassword = ""
+def scmUrl = ""
+
+signing {
+    required {
+        gradle.taskGraph.hasTask("uploadArchives")
+    }
+    println 'Signing...'
+    sign configurations.archives
+}
+
+uploadArchives {
+    configuration = configurations.archives
+    repositories.mavenDeployer {
+        beforeDeployment {
+            MavenDeployment deployment -> signing.signPom(deployment)
+        }
+
+        pom.groupId = "com.kbeanie"
+        pom.artifactId = "multipicker"
+        pom.version = version
+
+        repository(url: sonatypeRepo) {
+            authentication(userName: sonatypeUsername,
+                    password: sonatypePassword)
+        }
+
+        pom.project {
+            name 'Android Multipicker Library'
+            packaging 'aar'
+            description 'Multipicker Library for Android Applications'
+            url 'https://github.com/coomar2841/android-multipicker-library'
+
+            scm {
+                url scmUrl
+                connection scmUrl
+                developerConnection scmUrl
+            }
+
+            licenses {
+                license {
+                    name 'The Apache Software License, Version 2.0'
+                    url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    distribution 'repo'
+                }
+            }
+
+            developers {
+                developer {
+                    id 'coomar2841'
+                    name 'Kumar Bibek'
+                    email 'coomar.101@gmail.com'
+                }
+            }
+        }
+    }
+}
+
+android {
+    signingConfigs {
+        release {
+            keyAlias ""
+            keyPassword ""
+            storeFile file('../extras/release.keystore')
+            storePassword ""
+        }
+    }
+
+    compileSdkVersion 29
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        stage {
+        }
+    }
+
+    sourceSets{
+        main{
+            java {
+                exclude 'com.kbeanie.multipicker.test'
+            }
+        }
+    }
+}
+
+gradle.taskGraph.whenReady { taskGraph ->
+    if (taskGraph.hasTask(':app:assembleRelease') || taskGraph.hasTask(':app:packageRelease')) {
+        /**
+         * Configure Release key
+         */
+        android.signingConfigs.release.keyAlias "alias_name"
+        android.signingConfigs.release.storePassword "keystore_password"
+        android.signingConfigs.release.keyPassword "keystore_alias_password"
+
+        println android.signingConfigs.release.keyAlias
+        println android.signingConfigs.release.storePassword
+        println android.signingConfigs.release.keyPassword
+    }
+}
+
+dependencies {
+    compileOnly 'com.android.support:appcompat-v7:29.1.1'
+    implementation 'junit:junit:4.12'
+    implementation 'com.android.support:support-v4:29.1.1'
+}

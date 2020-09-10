@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign_in"
+    android:orientation="vertical">
+
+    <include layout="@layout/back_header"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/login_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/bGoogle"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/google"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/bFb"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/facebook"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/bTwitter"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/twitter"
+                    android:textColor="@color/white" />
+                <ImageView
+                    android:id="@+id/btnConnect"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/ic_instagramnew"
+                    android:textAllCaps="true"
+                    android:padding="8dp"
+                    android:textColor="@color/white" />
+
+                <com.twitter.sdk.android.core.identity.TwitterLoginButton
+                    android:id="@+id/bTwitterLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/bInstagram"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/instagram"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="OR"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_gravity="center"/>
+
+            <RelativeLayout
+                android:id="@+id/rlPhone"
+                android:layout_width="200dp"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_white"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/mobile"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="@string/mobile"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="25dp"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/terms_amp_conditions"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llAfterLoginView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btnViewInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dip"
+            android:layout_marginRight="40dip"
+            android:text="View Info" />
+
+        <Button
+            android:id="@+id/btnGetAllImages"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dip"
+            android:layout_marginRight="40dip"
+            android:text="All Images" />
+
+        <Button
+            android:id="@+id/btnFollows"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dip"
+            android:layout_marginRight="40dip"
+            android:text="Followers" />
+
+        <Button
+            android:id="@+id/btnFollowing"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dip"
+            android:layout_marginRight="40dip"
+            android:text="Followings" />
+    </LinearLayout>
+</RelativeLayout>

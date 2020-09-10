@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:drawable="@drawable/blur_img"
+        tools:ignore="ResourceCycle" /> <!-- change @drawable/nature with your desired image -->
+    <item>
+
+        <shape android:shape="rectangle">
+
+            <!-- You can use from 1% transparency to 100% transparency, according to your need,-->
+            <solid android:color="#10FFFFFF" /><!-- Here transparency level is 80%-->
+
+        </shape>
+
+    </item>
+
+</layer-list>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inviteUserLl"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:paddingRight="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="0dp"
+            android:layout_weight="0.32"
+            app:cardPreventCornerOverlap="false"
+            app:cardCornerRadius="22dp"
+            android:elevation="5dp"
+            android:translationZ="3dp">
+            <ImageView
+                android:id="@+id/iv_invite_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/add_user_foreground" />
+        </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="2.2"
+            android:layout_height="52dp">
+            <TextView
+                android:id="@+id/tv_invite_username"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="15dp"
+                android:text="TextView"
+                android:textAlignment="gravity"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimary"/>
+            <RelativeLayout
+                android:id="@+id/live"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="start|center"
+                android:layout_toRightOf="@+id/tv_invite_username"
+                android:layout_height="wrap_content">
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/avi"
+                    style="@style/AVLoadingIndicatorView"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:padding="15dp"
+                    app:indicatorColor="@color/green"
+                    app:indicatorName="LineScalePulseOutIndicator" />
+                <TextView
+                    android:layout_toRightOf="@+id/avi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:gravity="left|center_vertical"
+                    android:text="Live"
+                    android:textAlignment="gravity"
+                    android:textSize="12sp"
+                    android:textColor="@color/green"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+        <ImageView
+            android:id="@+id/iv_invitation_send"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/ic_send_trans" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

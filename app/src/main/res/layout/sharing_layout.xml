@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:text="Share With"
+        android:fontFamily="@font/calibri_regular"
+        android:id="@+id/shareWithText"/>
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_below="@+id/shareWithText"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginTop="25dp"-->
+        <!--android:text="BLive Friends"-->
+        <!--android:id="@+id/shareWithBliveFriends"/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="30dp"-->
+        <!--android:layout_below="@+id/shareWithText"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginTop="25dp"-->
+        <!--android:text="Others"-->
+        <!--android:id="@+id/shareWithOtherFriends"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp">
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:id="@+id/facebook_share"
+            android:src="@drawable/c_facebook_share"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:id="@+id/whatsapp_share"
+            android:src="@drawable/c_whatsapp"/>
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:id="@+id/twitter_share"
+            android:src="@drawable/c_twitter_share"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:id="@+id/instagramShareBtn"
+            android:src="@drawable/insta"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:id="@+id/friends_share"
+            android:src="@drawable/c_friends"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

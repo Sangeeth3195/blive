@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/confirm"
+        android:icon="@drawable/btn_checked"
+        android:title="@string/label_confirm"
+        app:showAsAction="always"
+        android:visible="true"/>
+</menu>
+

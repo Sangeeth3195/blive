@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@android:color/transparent"
+        android:id="@+id/game_webview"
+        android:layout_below="@+id/close_web"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_close_black_24dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/close_web"
+        app:civ_circle_background_color="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        app:civ_border_color="@color/colorPrimaryDark"
+        app:civ_border_width="4dp"
+        android:layout_margin="10dp"
+        />
+
+</RelativeLayout>

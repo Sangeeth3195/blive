@@ -1,0 +1,175 @@
+{
+  "project_info": {
+    "project_number": "343373809801",
+    "firebase_url": "https://blive-83473.firebaseio.com",
+    "project_id": "blive-83473",
+    "storage_bucket": "blive-83473.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343373809801:android:bae21c1f99047b26",
+        "android_client_info": {
+          "package_name": "com.blive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343373809801-pngm87d4uff7ueo6261b1hg0omdudtcs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blive",
+            "certificate_hash": "07a3ee8b60cf64a897a405ef30b08662a3539155"
+          }
+        },
+        {
+          "client_id": "343373809801-rh8ao59q2ctb5dueu1feqkq5e0tsjme3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blive",
+            "certificate_hash": "5a186c2b741a53756dbcea2f86e63d0d2df12858"
+          }
+        },
+        {
+          "client_id": "343373809801-csnho2c1sk5vl2ul778c79e2iigd4hqp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blive",
+            "certificate_hash": "0012d23d1618ad874742a60f2ee8475953ab9afa"
+          }
+        },
+        {
+          "client_id": "343373809801-28ss15tdlva0tp945bv23m903mr4vngg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blive",
+            "certificate_hash": "569c470fb98ea949c0c5c5427b87d611264c7e20"
+          }
+        },
+        {
+          "client_id": "343373809801-f85056mt7bposrjq4dvcffbdto8f3ecd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blive",
+            "certificate_hash": "c73feb251748d2c7f00ac78cbddde93dd87a0335"
+          }
+        },
+        {
+          "client_id": "343373809801-j72tcr105a5d99ksl7injpiuaj10lun1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blive",
+            "certificate_hash": "4f71d12ef05ab2ac6e38bcd56dd515ffe0799a47"
+          }
+        },
+        {
+          "client_id": "343373809801-rirq2611d82q6l4it312n9bphqpi0rq7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blive",
+            "certificate_hash": "9abfc75521c628f1c402daaf2641241419339709"
+          }
+        },
+        {
+          "client_id": "343373809801-tcej5tf5tt886a1873ta2pth897kfrmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6I89iYqg3BzVK-ZCD9opjs4FcUeYvhfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343373809801-tcej5tf5tt886a1873ta2pth897kfrmi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "343373809801-9fd7vubo1i9ngmo0b31145a17bamn1mp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.blive.blivehrs"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343373809801:android:cb4cdbe49bdf07a3",
+        "android_client_info": {
+          "package_name": "com.blive.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343373809801-tcej5tf5tt886a1873ta2pth897kfrmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6I89iYqg3BzVK-ZCD9opjs4FcUeYvhfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343373809801-tcej5tf5tt886a1873ta2pth897kfrmi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "343373809801-9fd7vubo1i9ngmo0b31145a17bamn1mp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.blive.blivehrs"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343373809801:android:7c492f7093d73fe3",
+        "android_client_info": {
+          "package_name": "com.blive.stage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343373809801-tcej5tf5tt886a1873ta2pth897kfrmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6I89iYqg3BzVK-ZCD9opjs4FcUeYvhfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343373809801-tcej5tf5tt886a1873ta2pth897kfrmi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "343373809801-9fd7vubo1i9ngmo0b31145a17bamn1mp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.blive.blivehrs"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

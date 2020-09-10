@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.blive.activity.ActivityWallet">
+
+    <include layout="@layout/back_header" />
+
+    <ImageView
+        android:id="@+id/iv_gWallet"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/google_wallet" />
+
+    <ImageView
+        android:id="@+id/tv_more"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:text="More..."
+        android:src="@drawable/more"
+        android:textSize="35dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_marginTop="25dp" />
+
+</LinearLayout>

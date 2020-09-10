@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/giftbox"
+        android:layout_width="wrap_content"
+        android:layout_height="380dp"
+        android:layout_gravity="center"
+        android:elevation="5dp"
+        android:layout_marginBottom="-50dp"
+        android:src="@drawable/check_in" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="8dp"
+        android:layout_marginTop="330dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="55dp"
+                android:textSize="14sp"
+                android:text="Click here to Get Gift"/>
+
+            <Button
+                android:id="@+id/gift_check_in"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_corner"
+                android:text="check in"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

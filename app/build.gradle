@@ -1,0 +1,280 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.30.0'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'realm-android'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+repositories {
+    flatDir {
+        dirs '../libs'
+    }
+}
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.blive"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 85
+        versionName "1.8.25"
+        ndk.abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+
+        buildConfigField("boolean", "loggingEnabled", "${log_enabled}")
+        buildConfigField("String", "logPrefix", "\"${log_prefix}\"")
+        buildConfigField "String", "DEFAULT_URL", "\"${manifestPlaceholders.defaultUrl}\""
+
+        testInstrumentationRunner "androidx.test.runner.AndrosidJUnitRunner"
+        multiDexEnabled true
+
+
+        lintOptions {
+            checkReleaseBuilds false
+            abortOnError false
+        }
+    }
+
+    signingConfigs {
+
+        release {
+            keyAlias 'blivekey'
+            keyPassword 'Welcome123!'
+            storeFile file('../bliveKeyStore.jks')
+            storePassword 'Welcome123!'
+            v2SigningEnabled false
+        }
+        config {
+        }
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+            minifyEnabled false
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                    'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            buildConfigField("boolean", "loggingEnabled", "${log_enabled}")
+            // Used in java code
+            buildConfigField("String", "api_host_name", "\"${stg_api_host_name}\"")
+            buildConfigField("String", "web_host_name", "\"${stg_web_host_name}\"")
+            buildConfigField("String", "private_app_id", "\"${stg_app_key}\"")
+            //buildConfigField("String", "app_certificate", "\"${dev_app_certificate}\"")
+            // Used in xml code
+            resValue("string", "app_name", "${app_name_debug}")
+        }
+
+        stage {
+            applicationIdSuffix ".stage"
+            minifyEnabled false
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                    'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            buildConfigField("boolean", "loggingEnabled", "${log_enabled}")
+            // Used in java code
+            buildConfigField("String", "api_host_name", "\"${stg_api_host_name}\"")
+            buildConfigField("String", "web_host_name", "\"${stg_web_host_name}\"")
+            buildConfigField("String", "private_app_id", "\"${dev_app_key}\"")
+            //buildConfigField("String", "app_certificate", "\"${stg_app_certificate}\"")
+            // Used in xml code
+            resValue("string", "app_name", "${app_name_stage}")
+        }
+
+        release {
+            minifyEnabled false
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                    'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            buildConfigField("boolean", "loggingEnabled", "${log_disabled}")
+            // Used in java code
+            buildConfigField("String", "api_host_name", "\"${prod_api_host_name}\"")
+            buildConfigField("String", "web_host_name", "\"${prod_web_host_name}\"")
+            buildConfigField("String", "private_app_id", "\"${prod_app_key}\"")
+            // Used in xml code
+            resValue("string", "app_name", "${app_name_release}")
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['./libs']
+        }
+    }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: './libs')
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.exifinterface:exifinterface:1.1.0'
+    implementation 'androidx.media:media:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.palette:palette:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.core:core:1.2.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    //ButterKnife
+    implementation 'com.jakewharton:butterknife:10.2.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
+
+    //Material Dialogue
+    implementation 'com.afollestad.material-dialogs:core:0.9.4.2'
+
+    //Facebook SDK
+    implementation 'com.facebook.android:facebook-android-sdk:4.35.0'
+
+    //Twitter SDK
+    implementation 'com.twitter.sdk.android:twitter:3.3.0'
+
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    //OkHttp
+    implementation("com.squareup.okhttp3:okhttp:3.14.2")
+
+    //font style
+    implementation 'uk.co.chrisjenx:calligraphy:2.2.0'
+
+    //Google
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //ShineButton
+    implementation 'com.sackcentury:shinebutton:0.2.0'
+
+    //Fabric Crashlytics
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.9@aar') {
+        transitive = true;
+    }
+
+    //Google Play
+    implementation 'com.google.android.gms:play-services-gcm:16.1.0'
+
+    //Glide
+    def GLIDE_VERSION = "4.10.0"
+
+    // webp Decoder
+    implementation "com.zlc.glide:webpdecoder:1.6.4.10.0"
+    implementation "com.github.bumptech.glide:glide:${GLIDE_VERSION}"
+    annotationProcessor "com.github.bumptech.glide:compiler:${GLIDE_VERSION}"
+
+    //FireBase
+    implementation 'com.google.firebase:firebase-core:17.2.2'
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.google.firebase:firebase-messaging:20.1.0'
+    implementation 'com.firebase:firebase-client-android:2.5.2'
+    implementation 'com.google.firebase:firebase-storage:19.1.0'
+    //in app message
+    implementation 'com.google.firebase:firebase-inappmessaging-display:19.0.3'
+    implementation 'com.google.firebase:firebase-analytics:17.2.2'
+    implementation 'com.google.firebase:firebase-database:19.2.1'
+
+    //Image Cropper
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.0'
+
+    //QR scanner
+    implementation 'me.dm7.barcodescanner:zxing:1.9'
+    implementation 'com.journeyapps:zxing-android-embedded:3.5.0'
+
+    //Agora SDK
+    implementation 'org.slf4j:slf4j-api:1.7.25'
+    implementation 'io.agora.rtc:full-sdk:2.9.1'
+    implementation 'io.agora.rtm:rtm-sdk:1.2.2'
+
+    //Loading
+    implementation 'com.wang.avi:library:2.1.3'
+
+    //Blur
+    implementation 'jp.wasabeef:picasso-transformations:2.2.1'
+
+    //fab menu
+    implementation 'com.github.clans:fab:1.6.4'
+
+    //MultiSelect Spinner
+    implementation 'com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1'
+
+    //Pin
+    implementation('com.alimuzaffar.lib:pinentryedittext:1.3.10') {
+        // Exclude is only needed if you already have
+        // any of the following as a dependency in your project.
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+        exclude group: 'com.android.support', module: 'support-v13'
+    }
+
+    // event bus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    // exoplayer
+    implementation 'com.google.android.exoplayer:exoplayer:2.9.1'
+    implementation 'org.jsoup:jsoup:1.11.2'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.9.1'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.9.1'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.9.1'
+    // play core update app
+    implementation 'com.google.android.play:core:1.6.4'
+
+    //circle image view
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    //inappupdate
+    implementation 'com.google.android.play:core:1.6.4'
+    implementation 'com.github.delight-im:Android-AdvancedWebView:v3.0.0'
+
+    // In App Purchase
+    implementation 'com.android.billingclient:billing:2.1.0'
+    // Youtube Player
+    implementation 'com.github.PierfrancescoSoffritti:AndroidYouTubePlayer:7.0.1'
+    implementation 'com.google.android.gms:play-services-ads-lite:16.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+
+    //Emoji keyboard
+    implementation 'com.vanniktech:emoji-google:0.5.1'
+    implementation('com.googlecode.ez-vcard:ez-vcard:0.10.4') {
+        exclude group: 'org.freemarker'
+    }
+    implementation 'com.github.chrisbanes:PhotoView:2.0.0'
+    implementation 'com.iceteck.silicompressorr:silicompressor:2.1'
+    implementation 'com.eyalbira.loadingdots:loading-dots:1.0.2'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation project(path: ':multipicker')
+    implementation 'com.github.adrielcafe:AndroidAudioConverter:0.0.8'
+
+}
+
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
